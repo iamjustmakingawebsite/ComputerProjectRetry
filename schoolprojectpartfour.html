@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>What will happen later?</title>
+</head>
+<body>
+
+<h1 id="future-heading">Future Technologies</h1>
+
+<h2>Artificial Intelligence (AI)</h2>
+<p>
+  Artificial Intelligence, or AI, is technology that allows computers to perform
+  tasks that normally need human intelligence. These tasks include recognizing
+  images, understanding speech, answering questions, learning from data, and
+  making predictions. AI is used in chatbots, voice assistants, maps, medical
+  tools, video recommendations, and smart cameras.
+</p>
+
+<h2>Robotics</h2>
+<p>
+  Robotics is the field of designing, building, and programming robots. A robot
+  is a machine that can sense its surroundings, process information, and perform
+  actions. Robots are used in factories, hospitals, space missions, warehouses,
+  farming, and dangerous rescue work. Modern robots can use AI and sensors to
+  work more safely and accurately.
+</p>
+
+<h2>Quantum Computing</h2>
+<p>
+  Quantum computing is a new type of computing that uses quantum bits, called
+  qubits, instead of ordinary bits. A normal bit is either 0 or 1, but a qubit
+  can represent a combination of both states. Quantum computers may help solve
+  certain difficult problems in chemistry, medicine, materials science, and
+  cybersecurity, but they are still being developed.
+</p>
+
+
+
+<h2>3D Printing</h2>
+<p>
+  3D printing creates real objects by adding material layer by layer from a
+  digital design. It can be used to make models, machine parts, medical tools,
+  custom prosthetics, and even building components. It helps engineers create
+  prototypes quickly and test ideas before making large numbers of products.
+</p>
+
+<h2>Renewable Energy Technology</h2>
+<p>
+  Renewable energy technology uses natural sources such as sunlight, wind, and
+  flowing water to produce electricity. Solar panels and wind turbines are
+  common examples. Better batteries and smart power grids may help store and
+  distribute clean energy more efficiently in the future.
+</p>
+
+<h2>Biotechnology</h2>
+<p>
+  Biotechnology uses living cells, organisms, or biological processes to solve
+  problems. It is used in medicine, farming, food production, and environmental
+  protection. Future biotechnology may help develop new medicines, improve
+  crops, and create treatments designed for individual patients.
+</p>
+
+<h1>Test your knowledge with a simple quiz!</h1>
+
+<form>
+  <p>1. What does AI stand for?</p>
+  <input type="radio" name="q1" value="correct"> Artificial Intelligence<br>
+  <input type="radio" name="q1" value="wrong"> Automatic Internet<br><br>
+
+  <p>2. What is a robot?</p>
+  <input type="radio" name="q2" value="correct"> A machine that can do tasks<br>
+  <input type="radio" name="q2" value="wrong"> A type of book<br><br>
+
+  <p>3. What do quantum computers use?</p>
+  <input type="radio" name="q3" value="wrong"> Paper cards<br>
+  <input type="radio" name="q3" value="correct"> Qubits<br><br>
+
+  <p>4. Which technology creates a computer-made world?</p>
+  <input type="radio" name="q4" value="correct"> Virtual Reality<br>
+  <input type="radio" name="q4" value="wrong"> Solar energy<br><br>
+
+  <p>5. Which device can be part of a smart home?</p>
+  <input type="radio" name="q5" value="wrong"> A pencil<br>
+  <input type="radio" name="q5" value="correct"> A smart light<br><br>
+
+  <p>6. What does a 3D printer do?</p>
+  <input type="radio" name="q6" value="correct"> Makes objects layer by layer<br>
+  <input type="radio" name="q6" value="wrong"> Makes phone calls<br><br>
+
+  <p>7. Which is a renewable energy source?</p>
+  <input type="radio" name="q7" value="correct"> Sunlight<br>
+  <input type="radio" name="q7" value="wrong"> Petrol<br><br>
+
+  <p>8. Which field uses living cells to help people?</p>
+  <input type="radio" name="q8" value="wrong"> Virtual Reality<br>
+  <input type="radio" name="q8" value="correct"> Biotechnology<br><br>
+
+  <button type="button" onclick="checkAnswers()">Check Answers</button>
+</form>
+
+<p id="score"></p>
+
+<h2>Conclusion</h2>
+<p>
+  Future technologies can help people solve difficult problems and make daily
+  life easier. We should use these technologies carefully and responsibly.
+</p>
+
+<script>
+  function checkAnswers() {
+    let score = 0;
+
+    for (let i = 1; i <= 8; i++) {
+      let answer = document.querySelector('input[name="q' + i + '"]:checked');
+
+      if (answer && answer.value === "correct") {
+        score++;
+      }
+    }
+
+    document.getElementById("score").innerHTML =
+      "Your score: " + score + " out of 8";
+  }
+</script>
+</form>
+
+<h2> Arpan, Class 7e</h2>
+</body>
+</html>
